@@ -17,24 +17,25 @@ Login page
 •	User could login through the email and password they provide in the form.  
 •	They will be redirected to the shop page.  
 
-Registration page    
+Registration page  
+  
 •	User   
-  o	The unregistered user would be required to input their personal details such as shipping address, mobile no., email, password etc..   
-  o	Then they can Login   
+ 	 o	The unregistered user would be required to input their personal details such as shipping address, mobile no., email, password etc..   
+ 	 o	Then they can Login   
      
 •	Farmer   
-  o	The farmer would be required to fill the form congaing their personal information and information about their produce.   
-  o	After submitting our team will reach the farmer for further action.       
+  	o	The farmer would be required to fill the form congaing their personal information and information about their produce.   
+  	o	After submitting our team will reach the farmer for further action.       
 
 
-	Shop   
-•	The user would be able to go through the farmers produce available to them .   
-•	They can add the produce to their cart.(using cookies to store the products).   
-•	Then they can pay online for the payment.    
+ • 	Shop
+	o	The user would be able to go through the farmers produce available to them .   
+	o	They can add the produce to their cart.(using cookies to store the products).   
+	o	Then they can pay online for the payment.    
 
-Farmer    
-•	Farmer will be able to add products to the shop, which will then go through a round of verification before adding.   
-•	Farmer will be able to view the current rate of different farm produce.    
-•	Farmer will be able to see the latest new regarding technique, technology, demand and much more related to Agriculture.   
+•	Farmer    
+	o	Farmer will be able to add products to the shop, which will then go through a round of verification before adding.   
+	o	Farmer will be able to view the current rate of different farm produce.    
+	o	Farmer will be able to see the latest new regarding technique, technology, demand and much more related to Agriculture.   
 
 
