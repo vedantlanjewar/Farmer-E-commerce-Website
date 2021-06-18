@@ -28,7 +28,7 @@ Registration page
   	o	After submitting our team will reach the farmer for further action.       
 
 
- • 	Shop
+ • 	Shop    
 	o	The user would be able to go through the farmers produce available to them .   
 	o	They can add the produce to their cart.(using cookies to store the products).   
 	o	Then they can pay online for the payment.    
