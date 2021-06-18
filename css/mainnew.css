@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: century gothic;
+    box-sizing: border-box;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 0px 10px 1px black;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.main{
+    margin-top:139px;
+}
+.logo{
+    flex:1;
+}
+.logo img{
+    width: 175px;
+    height: auto;
+    margin:5px; 
+}
+nav{
+    flex:2;
+    margin:5px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+    padding:10px;
+    
+     
+}
+nav ul li a{
+    text-decoration: none; 
+    color: black;
+    font-weight: bold; 
+}
+nav ul li a:hover{
+    color: green; 
+}
+.cartlogomoney{
+    margin-right: 80px;
+}
+.cartlogomoney p{
+    display: inline;
+    flex:1;
+    margin:10px;
+    font-size: 20px;
+    margin-right: 0px;
+    
+}
+.wishcounter,.cartcounter{
+    position: absolute;
+    background-color: green;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+}
+.wishcounter{
+    left: 80%;
+    top: 0%;
+}
+.cartcounter{
+    left: 81%;
+    top: 0%;
+}
+
+
+.first{
+    display: flex;
+    height: 80vh;
+    overflow: hidden;
+}
+.categories{
+    flex-flow: column wrap;
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+    transition: all 0.3s linear;
+}
+.categories i{
+    margin-right: 5px;
+}
+.searchandimage{
+    flex:3;
+}
+.categories a{
+    display: block;
+}
+.categories p{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border:1px solid black;
+    
+}
+.categories a{
+    text-align: center;
+    margin-top: 5px;
+    font-size:20px ;
+    text-decoration: none;
+    color: black;
+    visibility: hidden;
+    margin: 10px;
+    
+}
+.categories a:hover{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.searchandimage img{
+    width: 90%;
+    height: auto;
+}
+
+.images p{
+    display: inline;
+    color: black;
+    position: absolute;;
+    border-radius: 10px;
+    font-size:70px;
+    transition: ease 0.5s;
+    background-color: rgba(255, 255, 255, 0.932);
+}
+.images p:hover{
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    cursor: pointer;
+}
+.images p:first-of-type{
+    left:26.5%;
+    top: 50%;
+}
+.images p:last-of-type{
+    left:90%;
+    top: 50%;
+}
+.search p{
+    height:60px;
+}
+#secondheading{
+    color: green;
+    font-size: 70px;
+    text-align: center;
+    margin:5%;
+}
+.second ul{
+    text-align: center;
+    margin: 5px;
+}
+.second ul li{
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+}
+.second ul li span{
+    text-align: center;
+    margin-right: 20px;
+}
+.second ul li span:hover{
+    cursor: pointer;
+}
+.items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    transition: ease 0.5s ;
+    
+}
+.items img{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    box-shadow: 1px 0px 5px 1px green;
+}
+.items h2,h3{
+    text-align: center;
+}
+.items button{
+    justify-content: center;
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+.items button:hover{
+    border: 1px solid rgb(0, 78, 0);
+    color: white;
+    background-color: green;
+    cursor: pointer;;
+}
+
+
+
+
+.footer{
+    height: 20vh;
+    background-color: darkgreen;
+    color: white;
+}
+.footimg{
+    height: 35vh;
+    background-color:rgb(42, 117, 42) ;
+    margin: auto;
+}
+.phone,.location,.email{
+    display: inline-block;
+    width:30%;
+    padding-left: 10%;;
+    text-align: center;
+    
+}
+.phone img,.location img,.email img{
+    width:30%;
+    height: auto;
+}
+.location img{
+    position: relative;
+    padding-top:15%;
+    right:8%;
+}
+.phone img{
+    bottom:20%;
+}
+.location p{
+    color: white;
+    width:80%;
+}
+.footimg p{
+    color: white;
+}
+
+.cartlogomoney a{
+ text-decoration: none;
+}

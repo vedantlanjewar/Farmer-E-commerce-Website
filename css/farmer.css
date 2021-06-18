@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: century gothic;
+    box-sizing: border-box;
+}
+header{
+    position:relative;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 0px 10px 1px black;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.main{
+    margin-top:139px;
+}
+.logo{
+    flex:1;
+}
+.logo img{
+    width: 175px;
+    height: auto;
+    margin:5px; 
+}
+nav{
+    flex:2;
+    margin:5px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+    padding:10px;
+    
+     
+}
+nav ul li a{
+    text-decoration: none; 
+    color: black;
+    font-weight: bold; 
+}
+nav ul li a:hover{
+    color: green; 
+}
+nav ul li a:active{
+    color: green; 
+}
+footer {
+    display: block;
+}
+.footimg {
+    height:30vh;
+    background-color: rgb(42, 117, 42);
+    margin: auto;
+}
+div {
+    display: block;
+}
+.phone, .location, .email {
+    display: inline-block;
+    width: 30%;
+    padding-left: 10%;
+    text-align: center;
+}
+.main {
+    margin-top: 139px;
+}
+.location img {
+    position: relative;
+    padding-top: 15%;
+    right: 8%;
+}
+.phone img, .location img, .email img {
+    width: 30%;
+    height: auto;
+}
+.footimg p {
+    color: white;
+}
+.location p {
+    color: white;
+    width: 80%;
+}
+.phone img {
+    bottom: 20%;
+}
+#register{
+    margin:2%;
+    margin-left: 40%;
+    width: 35%;
+    margin-bottom: 5%;
+    
+}
+body{
+    background-color: rgba(46, 46, 46, 0.329);
+}
+td,h2{
+    color: green;
+    font-size: 20px;
+    
+}
+h2{
+    font-size: 30px;
+}
+
+input,option,textarea,select{
+    background-color: black;
+    color: white;
+}
+#submit1{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 25%;
+}
+#submit1:hover{
+    color: green;
+    font-size: 22px;
+}
+#productreq{
+    height: 80vh;
+}
+#rates th{
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+#rates table{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#rates{
+    margin:2%;
+    margin-left: 30%;
+    width: 35%;
+    margin-bottom: 5%;
+    
+}
+#rates td{
+    color: rgb(1, 58, 1);
+}
+#news{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}

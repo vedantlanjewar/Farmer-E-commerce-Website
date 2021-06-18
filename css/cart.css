@@ -1,0 +1,14 @@
+#checkou{
+    margin-left: 30px;
+    font-size: 20px;
+  }
+#checkou:hover{
+    color: white;
+    background-color: green;
+    transition: 0.4s ease;
+}
+#colortotal{
+    color: green;
+    font-size: 20px;
+    margin-left: 50%;
+}

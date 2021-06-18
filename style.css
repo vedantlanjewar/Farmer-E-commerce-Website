@@ -1,0 +1,329 @@
+*{
+    /* to make it stick to the screen */
+    margin: 0;
+    padding:0;
+    font-family: century gothic;
+    /* to snap to div when scroll part 1 here part 2 in the child */
+    scroll-snap-type: y proximity;
+    box-sizing: border-box;
+}
+header{
+        /* to insert a baground image and overlay*/
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/nandhu-kumar-c0rewZey4RU-unsplash.jpg);
+    /* vh-view port */
+    /* to set the image exactly on the page */
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    /* for animation of slider */
+    animation-name:slider;
+    animation-duration: 9s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* this is the second part of the scroll snap */
+    scroll-snap-align: start;
+}
+
+.backtotop img{
+    position: fixed;
+    width: 20%;
+    height: auto;
+    top: 75%;
+    left:85%;
+}
+/* this is for the first text to be animated with the slider , used ::before for using content because ::before works on pseudo classes
+it will come before the span in the hearder.Note:- the span must be empty */
+.span1::before{
+    content:'Heading for the image 1';
+    width:20%;
+    animation-name: text;
+    animation-duration: 9s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color:white;
+    font-size: 60px;
+    position: relative;
+    margin-top:30%;
+    transform:translate(-50%,-50%);
+}
+header h1{
+    display: inline-block;
+    width:20%;
+    padding-top:20%;
+    padding-left:5%;
+}
+
+/* this is for the first text to be animated with the slider , used ::before for using content because ::before works on pseudo classes
+it will come before the span in the hearder.Note:- the span must be empty */
+/* .span2::before{
+    content:'Heading dfdf for the image 1';
+    width:20%;
+    animation-name: text2;
+    animation-duration: 9s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color:white;
+    font-size: 60px;
+    position: relative;
+    font-size: 30px;
+    color:white;
+} */
+/* header h3 span{
+    float: right;
+    display: inline-block;
+    width:20%;
+    margin-right:25%;
+    padding-bottom: 60%;
+} */
+
+/* this for the animation configuration of the first text*/
+/* @keyframes text2{
+    0%{content:'Heading dfdf for the image 1';}
+    33%{content:'Headingfdfd for the image 2';}
+    66%{content:'Headingdfdf for the image 3';}
+} */
+/* this for the animation configuration of the second text*/
+@keyframes text{
+    0%{content:'Heading for the image 1';}
+    33%{content:'Heading for the image 2';}
+    66%{content:'Heading for the image 3';}
+}
+/* this for the animation configuration of the slider*/
+@keyframes slider{
+    0%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/nandhu-kumar-c0rewZey4RU-unsplash.jpg);    
+    }
+    33%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg);}
+    66%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg);}
+}
+ul{
+    float: right;
+    /* to remove bullets */
+    list-style-type: none;
+    margin-top: 25px;   
+}
+ul li{
+    display: inline-block;
+    padding: 5px;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid white;   
+    transition: 0.4s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color:black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.top{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.aboutus{
+    height:100vh;
+    background-color: rgba(90, 90, 90, 0.507);
+    scroll-snap-align: start;
+    
+    
+}
+.aboutus img{
+    box-shadow: 1px 1px 5px 3px black;
+    border-radius: 50%;
+
+    
+}
+.leftimg{
+    float: left;
+    margin: 60px;
+    padding:10px;
+    margin-top:11%;
+    
+}
+.rightimg{
+    float: right;
+    margin: 60px;
+    padding:10px;
+    margin-top:11%;
+    
+}
+.centerimg{
+    position: relative;
+    display: inline-block;
+    width:20%;
+    margin-top:11%;
+    margin-left:10%;
+    
+    padding:10px;
+}
+.centerimg:hover,.leftimg:hover,.rightimg:hover{
+    transform: scale(1.2);
+    background-color:  rgb(21, 94, 3);
+    color:white ;
+    box-shadow: 2px 2px 10px 5px rgb(37, 37, 37);
+    
+
+
+}
+.aboutus img{
+    height: 250px;
+    width: auto;
+    border:1px solid black;
+}
+
+.leftimg p,.centerimg p,.rightimg p{
+    border-top:2px solid black;
+    padding-top:20px;
+    width:300px;
+    margin-top: 15px;
+}
+
+.serv{
+    height:100vh;
+    scroll-snap-align: start;
+    background-color:rgba(90, 90, 90, 0.507);
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/farm\ services.jpg);
+    background-size: cover;
+    background-position:center;
+                                     background fixed parralex effect 
+    background-attachment: fixed;  */
+    text-align: center;
+}
+
+.serv h2{
+    color: rgb(255, 255, 255);
+    font-size:100px ;
+    text-shadow: 3px 2px 7px rgb(0, 0, 0);
+}
+.abtlogo{
+    clear: both;
+    height: 5%;
+}
+.abtlogo img{
+    
+    width: 30%;
+    margin-left: 30%;
+    height:auto;
+    box-shadow: none;
+    position: relative;
+    /* top: 210%;
+    left:50%;
+    transform:translate(-50%,-50%); */
+    border:none;
+    border-radius: 0;
+    
+}
+ 
+.farmserv,.custserv{
+    background-color: white;
+    display: inline-block;
+    color:rgb(0, 0, 0);
+    position:relative;
+    font-size:20px;
+    width:30%;
+    margin:auto;
+    transition: 0.6s ease;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.61);
+    
+
+}
+.farmserv{
+    float: left;
+    margin-left: 10%;
+    overflow: auto;
+    margin-top:5%;
+}
+.custserv{
+    float:right;
+    margin-right: 10%;
+    overflow: auto;
+    margin-top:5%;
+}
+.farmserv ul li,.custserv ul li{
+    display: block;
+}
+.farmserv ul,.custserv ul{
+    float: left;
+}
+
+.farmserv:hover,.custserv:hover{
+    transform: scale(1.1);
+    background-color:  rgb(21, 94, 3);
+    color:white ;
+    box-shadow: 2px 2px 10px 5px rgb(42, 117, 42);
+    
+}
+
+.farmserv img,.custserv img{
+   
+    height:35vh;
+    width: auto;
+    padding: 0;
+    position: relative;
+    border:5px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px 2px black;
+    margin: 10px;
+    
+}
+
+.sell p,.buy p{
+    display: inline-block;
+    background-color: rgb(42, 117, 42);
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    position: relative;
+    margin-top:15%;
+    margin-left:15%;
+    width:30%;
+    padding:2px 10px;
+    border:2px solid black;
+}
+.buy p{
+    width:40%;
+}
+.sell p:hover,.buy p:hover{
+    color:rgb(42, 117, 42);
+    background-color: white;
+}
+.footimg{
+    height: 35vh;
+    background-color:rgb(42, 117, 42) ;
+    margin: auto;
+}
+.phone,.location,.email{
+    display: inline-block;
+    width:30%;
+    padding-left: 10%;;
+    text-align: center;
+    
+}
+.phone img,.location img,.email img{
+    width:30%;
+    height: auto;
+}
+.location img{
+    position: relative;
+    padding-top:15%;
+    right:8%;
+}
+.phone img{
+    bottom:20%;
+}
+.location p{
+    color: white;
+    width:80%;
+}
+.footimg p{
+    color: white;
+}

@@ -1,0 +1,71 @@
+*{
+    /* to make it stick to the screen */
+    margin: 0;
+    padding:0;
+    font-family: century gothic;
+    /* to snap to div when scroll part 1 here part 2 in the child */
+    scroll-snap-type: y proximity;
+    box-sizing: border-box;
+}
+header{
+    display: block;
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    /* for animation of slider */
+    scroll-snap-align: start;
+}
+
+.backtotop img{
+    position: fixed;
+    width: 20%;
+    height: auto;
+    top: 75%;
+    left:85%;
+}
+header h1{
+    position: absolute;
+    display: inline-block;
+    width:20%;
+    padding-top:20%;
+    padding-left:5%;
+    color:white;
+}
+
+
+/* @keyframes slider{
+    0%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/nandhu-kumar-c0rewZey4RU-unsplash.jpg);    
+    }
+    33%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/megan-thomas-xMh_ww8HN_Q-unsplash.jpg);}
+    66%{background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/raphael-rychetsky-li9JfUHQfOY-unsplash.jpg);}
+} */ 
+ul{
+    float: right;
+    /* to remove bullets */
+    list-style-type: none;
+    margin-top: 25px;   
+}
+ul li{
+    display: inline-block;
+    padding: 5px;
+}
+ul li a{
+    text-decoration:none;
+    color:white;
+    padding: 5px 20px;
+    border: 1px solid white;   
+    transition: 0.4s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color:black;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.top{
+    max-width: 1400px;
+    margin: auto;
+}
